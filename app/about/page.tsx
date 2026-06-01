@@ -8,7 +8,7 @@ export default function AboutPage() {
       {/* HEADER SECTION */}
       <section className="pt-20 text-center max-w-3xl mx-auto px-6 space-y-4">
         <span className="text-xs font-bold tracking-widest text-[#C5A059] uppercase">Our Legacy</span>
-        <h1 className="text-4xl sm:text-5xl font-serif text-[#0F1E36]">Meet the Vision Behind DE AESTHETICS</h1>
+        <h1 className="text-4xl sm:text-5xl font-serif text-[#0F1E36]">Meet the Vision Behind DE ESTHETICS</h1>
         <p className="text-[#5A6578] text-base sm:text-lg">We established our boutique studio on a single premise: that clinical excellence should never compromise absolute client peace.</p>
       </section>
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
             />
             <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-[#EBE8E2]">
               <h3 className="font-serif text-lg text-[#0F1E36] font-semibold">Dr. Abida Yaqoob, DDS</h3>
-              <p className="text-xs text-[#C5A059] font-medium uppercase tracking-wider mt-0.5">Founder & Lead Aesthetic Surgeon</p>
+              <p className="text-xs text-[#C5A059] font-medium uppercase tracking-wider mt-0.5">Founder & Lead Esthetic Surgeon</p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             Dr. Evelyn Vance completed her advanced cosmetic training at top-tier institutions, developing an internationally recognized eye for natural facial symmetry. Over her fifteen years in practice, she observed that traditional environments prioritized processing volume over patient care.
           </p>
           <p className="text-sm sm:text-base text-[#5A6578] leading-relaxed">
-            DE AESTHETICS was built to counter that standard. By blending modern diagnostic techniques with clean, biocompatible elements, she crafts healthy restoration strategies uniquely balanced around your overall systemic lifestyle.
+            DE ESTHETICS was built to counter that standard. By blending modern diagnostic techniques with clean, biocompatible elements, she crafts healthy restoration strategies uniquely balanced around your overall systemic lifestyle.
           </p>
           
           <div className="grid sm:grid-cols-2 gap-4 pt-4">
