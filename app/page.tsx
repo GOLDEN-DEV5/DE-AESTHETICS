@@ -63,7 +63,7 @@ export default function HomePage() {
             <div className="space-y-6">
               {[
                 { icon: <ShieldCheck />, title: "Biocompatible Materials Only", text: "We explicitly prioritize toxin-free, durable compounds that protect systemic health." },
-                { icon: <Award />, title: "Board-Certified Specialists", text: "Our clinical team actively leads continuing education initiatives in modern aesthetic fields." }
+                { icon: <Award />, title: "Board-Certified Specialists", text: "Our clinical team actively leads continuing education initiatives in modern esthetic fields." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-white flex items-center justify-center text-[#C5A059] shadow-sm">{item.icon}</div>
