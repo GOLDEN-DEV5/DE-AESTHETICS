@@ -20,7 +20,7 @@ export default function Navbar() {
         
         {/* Brand Logo */}
         <Link href="/" className="text-lg font-normal tracking-widest group">
-          <span className="text-[#C5A059] font-serif transition-colors"> DE AESTHETICS</span>
+          <span className="text-[#C5A059] font-serif transition-colors"> DE ESTHETICS</span>
         </Link>
 
         {/* Desktop Navigation Links */}
