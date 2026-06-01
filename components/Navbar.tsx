@@ -14,12 +14,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#EAEFF8] backdrop-blur-md border-b border-slate-900">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-[#EAEFF8] backdrop-blur-md border-b border-slate-200">
+      {/* Top Header Bar */}
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative z-50">
         
         {/* Brand Logo */}
-        <Link href="/" className="text-lg font-normal tracking-widest text-white group z-50">
-          <span className="text-[#C5A059] font-serif group-hover:text-[#C5A059] transition-colors"> DE AESTHETICS</span>
+        <Link href="/" className="text-lg font-normal tracking-widest group">
+          <span className="text-[#C5A059] font-serif transition-colors"> DE AESTHETICS</span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -34,7 +35,7 @@ export default function Navbar() {
                   className={`text-xs uppercase tracking-wider transition-colors ${
                     isActive 
                       ? 'text-[#C5A059] font-medium' 
-                      : 'text-black hover:text-[#C5A059] font-light'
+                      : 'text-slate-800 hover:text-[#C5A059] font-light'
                   }`}
                 >
                   {link.name}
@@ -51,40 +52,39 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger Menu Button (Visible on Mobile Only) */}
+        {/* Hamburger Menu Button */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-slate-400 hover:text-black focus:outline-none z-50 p-2"
+          className="md:hidden text-[#0F1E36] hover:text-[#C5A059] focus:outline-none p-2 transition-colors"
           aria-label="Toggle Menu"
         >
           <svg className="h-6 w-6 fill-none stroke-current" viewBox="0 0 24 24">
             {isOpen ? (
-              // "X" Close Icon
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" />
             ) : (
-              // 3-Line Hamburger Icon
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
       </div>
 
-      {/* Mobile Drawer Panel (Slide down animation via Tailwind state adjustments) */}
+      {/* Fixed Mobile Drawer Panel */}
       <div 
-        className={`fixed inset-0 bg-slate-950/98 z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-0 min-h-screen bg-[#EAEFF8] z-40 flex flex-col pt-24 px-6 transition-all duration-300 ease-in-out md:hidden ${
           isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'
         }`}
       >
-        <div className="flex flex-col items-center space-y-8 text-center">
+        {/* Navigation Items Link List */}
+        <div className="flex flex-col space-y-6 text-left border-t border-slate-200/50 pt-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsOpen(false)} // Close menu on navigation click
-                className={`text-lg uppercase tracking-widest transition-colors ${
-                  isActive ? 'text-sky-400 font-medium' : 'text-slate-400 hover:text-white font-light'
+                onClick={() => setIsOpen(false)}
+                className={`text-sm uppercase tracking-widest py-2 transition-colors ${
+                  isActive ? 'text-[#C5A059] font-medium' : 'text-[#0F1E36] hover:text-[#C5A059] font-light'
                 }`}
               >
                 {link.name}
@@ -92,10 +92,11 @@ export default function Navbar() {
             );
           })}
           
+          {/* Action Button */}
           <Link 
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="bg-sky-500 hover:bg-sky-600 text-slate-950 font-medium text-sm uppercase tracking-widest px-8 py-3 rounded mt-4 min-w-[180px] transition-colors"
+            className="bg-[#0F1E36] hover:bg-[#1A2E4C] text-white font-medium text-xs uppercase tracking-widest py-3 rounded mt-6 w-full text-center transition-colors block"
           >
             Contact
           </Link>
