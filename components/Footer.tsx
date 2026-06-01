@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Column 1: Clinic Overview */}
         <div className="space-y-3">
           <div className="text-sm font-normal tracking-widest text-black">
-            <span className="text-[#C5A059] font-serif">DE AESTHETICS</span>
+            <span className="text-[#C5A059] font-serif">DE ESTHETICS</span>
           </div>
           <p className="leading-relaxed max-w-xs text-black">
             Clinical integration of premium dentistry and non-surgical facial treatments tailored to your structural symmetry.
