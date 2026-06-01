@@ -22,7 +22,7 @@ export default function AboutPage() {
               className="w-full h-full object-cover contrast-[102%]"
             />
             <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-[#EBE8E2]">
-              <h3 className="font-serif text-lg text-[#0F1E36] font-semibold">Dr. Evelyn Vance, DDS</h3>
+              <h3 className="font-serif text-lg text-[#0F1E36] font-semibold">Dr. Abida Yaqoob, DDS</h3>
               <p className="text-xs text-[#C5A059] font-medium uppercase tracking-wider mt-0.5">Founder & Lead Aesthetic Surgeon</p>
             </div>
           </div>
