@@ -94,7 +94,7 @@ export default function ServicesPage() {
       <section className="bg-[#EAEFF8] py-24 mt-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#0F1E36]">Aesthetic Treatments</h2>
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#0F1E36]">Esthetic Treatments</h2>
             <div className="h-px flex-grow bg-[#CBD2DC]"></div>
           </div>
           
@@ -122,7 +122,7 @@ export default function ServicesPage() {
           
           <div className="relative z-10 space-y-8">
             <h2 className="text-3xl md:text-5xl font-serif text-white max-w-2xl mx-auto leading-tight">
-              Ready to begin your <span className="italic text-[#C5A059]">aesthetic journey?</span>
+              Ready to begin your <span className="italic text-[#C5A059]">esthetic journey?</span>
             </h2>
             <p className="text-[#CBD2DC] text-sm md:text-base max-w-lg mx-auto leading-relaxed">
               Book a comprehensive consultation with our specialists to map out your personalized treatment plan.
